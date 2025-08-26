@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #d9e4ff, #b5b9f9);
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Set to column to keep header at top */
+}
+.navbar {
+    background-color: black;
+    color: white;
+    height: 60px;
+    display: flex;
+}
+.profile {
+    width: 40px;
+}
+.title{
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+.menu{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    gap:20px;
+    align-items: center;
+    padding-left: 1050px;
+    padding-right: 7;
+    position: auto;
+}
+.container {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 50px;
+    margin: auto; /* Center the container */
+}
+.form-container {
+    display: flex;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+
+.image-wrapper {
+    flex: 1;
+    padding: 10px;
+}
+
+.image-wrapper img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.register-form {
+    flex: 1;
+    padding: 20px;
+}
+
+.register-form h2 {
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.remember-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #6a5acd;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #5a4abf;
+}
+
+p {
+    text-align: center;
+}
+
+button.login-btn {
+    background-image: linear-gradient(135deg, #c3b8f3, #debffe);
+    border: none;
+    border-radius: 1rem;
+    padding: 0.8rem;
+    font-weight: 900;
+    color: #000;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(191,170,255,0.6);
+    transition: background-image 0.3s ease;
+}
+button.login-btn:hover {
+    background-image: linear-gradient(135deg, #b69cf0, #d9c6ff);
+}
