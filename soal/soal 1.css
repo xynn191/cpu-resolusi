@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: black;
+    color: white;
+    height: 60px;
+    display: flex;
+}
+.profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.title{
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+.menu{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    gap:20px;
+    align-items: center;
+    padding-left: 1050px; /* tetap */
+}
+.layanan, .ulasan, .pricing {
+    text-decoration: none;
+    color: white;
+}
+.content {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;     
+  padding: 20px;
+  background: linear-gradient(135deg, #b9b6f9, #d4c7ff);
+  height: 340px;
+  gap: 40px; 
+}
+.soal {
+    margin-top: 50px;
+    margin-right: 700px;
+    width: 600px;
+    background: white;
+    border: 1px solid #aaa;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 20px;
+    height: 150px;
+}
+.jawaban {
+    margin-top: 30px;
+    margin-right: 700px;
+    width: 600px;
+    background: white;
+    border: 1px solid #aaa;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 20px;
+    height: 240px;
+    font-size: 20px;
+}
+.jawaban label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+.jawaban input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 300px;
+}
+.box {
+  width: 50px;
+  height: 50px;
+  background-color: lightgreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 8px;
+  border: 1px solid #333;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.box:hover {
+  background-color: limegreen;
+  color: white;
+}
+.outer-box {
+    margin-top: 30px;
+    background-color: white;
+    margin-left: 800px; /* tetap */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    max-width: 350px;
+}
+
+/* =========================
+   RESPONSIVE (TANPA UBAH TATA LETAK)
+========================= */
+@media (max-width: 1200px) {
+  .menu {
+    padding-left: 500px; /* geser biar tidak ketabrak */
+  }
+  .outer-box {
+    margin-left: 600px;
+  }
+}
+
+@media (max-width: 992px) {
+  .menu {
+    padding-left: 250px;
+  }
+  .outer-box {
+    margin-left: 400px;
+    max-width: 300px;
+  }
+  .soal, .jawaban {
+    width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    padding-left: 50px;
+    gap: 15px;
+    font-size: 14px;
+  }
+  .outer-box {
+    margin-left: 50px;
+    max-width: 90%;
+  }
+  .soal, .jawaban {
+    width: 90%;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu {
+    flex-direction: column;
+    padding-left: 0;
+    gap: 10px;
+    font-size: 12px;
+  }
+  .outer-box {
+    margin-left: 20px;
+    max-width: 95%;
+  }
+  .soal, .jawaban {
+    width: 95%;
+    margin-left: 10px;
+  }
+  .jawaban {
+    font-size: 16px;
+  }
+}
